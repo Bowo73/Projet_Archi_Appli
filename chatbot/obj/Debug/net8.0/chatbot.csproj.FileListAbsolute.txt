@@ -8,7 +8,12 @@ C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\chatbot.runtimeconfig.json
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\chatbot.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\chatbot.pdb
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\ExcelNumberFormat.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -27,11 +32,14 @@ C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Polly.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Polly.Extensions.Http.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\RBush.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Sprache.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\obj\Debug\net8.0\chatbot.csproj.AssemblyReference.cache
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\obj\Debug\net8.0\chatbot.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bowo7\OneDrive\Bureau\EPSI\Cours\architecture_applicative\Projet_Archi_Appli\chatbot\obj\Debug\net8.0\chatbot.AssemblyInfoInputs.cache
