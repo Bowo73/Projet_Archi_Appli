@@ -24,3 +24,8 @@ npm i @angular/material
 
 ng s
 
+## 🛠 Installation des dépendances (développeur)
+
+### Sous Windows
+```bash
+powershell -ExecutionPolicy Bypass -File ./scripts/install.ps1

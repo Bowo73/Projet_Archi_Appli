@@ -5894,24 +5894,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\local_2tp2quy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\brice\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\local_2tp2quy\\Documents\\Etude\\EPSI\\Cours\\2024-2025\\Architecture_applicative_Mathieu_Mack\\ChatBot\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+      "projectUniqueName": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
       "projectName": "chatbot",
-      "projectPath": "C:\\Users\\local_2tp2quy\\Documents\\Etude\\EPSI\\Cours\\2024-2025\\Architecture_applicative_Mathieu_Mack\\ChatBot\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
-      "packagesPath": "C:\\Users\\local_2tp2quy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\local_2tp2quy\\Documents\\Etude\\EPSI\\Cours\\2024-2025\\Architecture_applicative_Mathieu_Mack\\ChatBot\\Projet_Archi_Appli\\chatbot\\obj\\",
+      "projectPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+      "packagesPath": "C:\\Users\\brice\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\local_2tp2quy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\brice\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5936,8 +5931,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -5979,7 +5973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
