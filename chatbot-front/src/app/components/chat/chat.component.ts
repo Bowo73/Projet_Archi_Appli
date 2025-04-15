@@ -155,5 +155,21 @@ export class ChatComponent implements OnInit {
     }, 0);
   }
 
+  downloadExcel(): void {
+    this.chatService.downloadExcel().subscribe({
+      next: (blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'produits-genere.xlsx'; // nom du fichier téléchargé
+        a.click();
+        window.URL.revokeObjectURL(url);
+      },
+      error: (err) => {
+        console.error('Erreur lors du téléchargement du fichier généré :', err);
+      }
+    });
+  }
+
 
 }

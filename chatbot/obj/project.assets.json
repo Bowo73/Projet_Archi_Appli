@@ -6185,11 +6185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+      "projectUniqueName": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj",
       "projectName": "chatbot",
-      "projectPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+      "projectPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj",
       "packagesPath": "C:\\Users\\brice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\obj\\",
+      "outputPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brice\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6266,5 +6266,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

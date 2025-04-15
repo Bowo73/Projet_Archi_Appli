@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj": {}
+    "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj": {
+    "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+        "projectUniqueName": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj",
         "projectName": "chatbot",
-        "projectPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\chatbot.csproj",
+        "projectPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\chatbot.csproj",
         "packagesPath": "C:\\Users\\brice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli\\chatbot\\obj\\",
+        "outputPath": "C:\\Users\\brice\\Documents\\Cours 4.1\\App Design\\Projet_Archi_Appli-1\\chatbot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brice\\AppData\\Roaming\\NuGet\\NuGet.Config",

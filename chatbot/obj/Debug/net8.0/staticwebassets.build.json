@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RBbdL6z4akfYQ7bgRBkYLKDRPQusU7yqY7U2fBLz7Tg=",
+  "Source": "chatbot",
+  "BasePath": "_content/chatbot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

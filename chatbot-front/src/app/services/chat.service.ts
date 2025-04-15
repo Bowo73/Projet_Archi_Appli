@@ -29,4 +29,17 @@ export class ChatService {
   clearMessages(): void {
     localStorage.removeItem(this.chatKey);
   }
+
+  uploadExcel(fileData: FormData) {
+    return this.http.post('http://localhost:5013/api/import/upload', fileData);
+  }
+  
+  downloadExcel() {
+    return this.http.get('http://localhost:5013/api/Export/export', {
+      responseType: 'blob'
+    });
+  }
+  
 }
+
+
