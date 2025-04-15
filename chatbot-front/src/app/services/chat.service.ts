@@ -5,7 +5,7 @@ import { Message } from '../models/message.model';
 
 @Injectable({ providedIn: 'root' })
 export class ChatService {
-  private apiUrl = 'http://localhost:5013/api/test/generate';
+  private apiUrl = 'http://localhost:5013/api/Test/generate';
   private chatKey = 'AZURE_OPENAI_API_KEY';
 
   constructor(private http: HttpClient) {}
@@ -31,7 +31,7 @@ export class ChatService {
   }
 
   uploadExcel(fileData: FormData) {
-    return this.http.post('http://localhost:5013/api/import/upload', fileData);
+    return this.http.post('http://localhost:5013/api/Import/upload', fileData);
   }
   
   downloadExcel() {
@@ -40,6 +40,12 @@ export class ChatService {
     });
   }
   
+  sendMessageWithAttachment(formData: FormData) {
+    return this.http.post<{ content: string }>(
+      'https://localhost:5013/api/Prompt/send',
+      formData
+    );
+  }
 }
 
 

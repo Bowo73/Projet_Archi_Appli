@@ -44,13 +44,27 @@
     <button *ngIf="editMode" mat-stroked-button color="warn" (click)="cancelEdit()">Annuler</button>
 
     <!-- Bouton envoyer -->
-    <button mat-icon-button color="primary" (click)="sendMessage()">
-      <mat-icon>send</mat-icon>
-    </button>
+    <div class="send-section">
+      <input type="file" accept=".xlsx" (change)="onFileSelected($event)" />
+    
+      <button mat-raised-button color="primary" (click)="sendMessageWithAttachment()">
+        Envoyer
+      </button>
+    </div>
+    
 
+    <!-- Bouton Télécharger le fichier -->
     <button mat-form-button color="primary" (click)="downloadExcel()">
       Télécharger
     </button>
+
+    <div class="upload-section" style="margin-top: 1rem;">
+      <input type="file" accept=".xlsx" (change)="onFileSelected($event)" />
+      <button mat-form-button color="primary" (click)="uploadExcel()" [disabled]="!selectedFile">
+        Envoyer un fichier Excel à traiter
+      </button>
+    </div>
+    
   </div>
 </mat-card>
 

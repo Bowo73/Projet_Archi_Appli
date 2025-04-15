@@ -171,5 +171,68 @@ export class ChatComponent implements OnInit {
     });
   }
 
+  selectedFile: File | null = null;
+
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      this.selectedFile = input.files[0];
+    }
+  }
+
+  uploadExcel(): void {
+    if (!this.selectedFile) return;
+
+    const formData = new FormData();
+    formData.append('file', this.selectedFile);
+
+    this.chatService.uploadExcel(formData).subscribe({
+      next: (res: any) => {
+        alert('✅ Fichier envoyé au bot : ' + res); // tu peux styliser ça plus tard
+      },
+      error: (err) => {
+        console.error('Erreur lors de l’upload :', err);
+        alert('❌ Erreur lors de l’envoi du fichier.');
+      }
+    });
+  }
+
+  sendMessageWithAttachment(): void {
+    if (!this.userInput.trim() && !this.selectedFile) return;
+
+    const formData = new FormData();
+    formData.append('message', this.userInput);
+
+    if (this.selectedFile) {
+      formData.append('file', this.selectedFile);
+    }
+
+    this.loading = true;
+
+    this.chatService.sendMessageWithAttachment(formData).subscribe({
+      next: (response) => {
+        this.messages.push({
+          sender: 'user',
+          content: this.userInput || '[Fichier envoyé]',
+          timestamp: new Date()
+        });
+
+        this.messages.push({
+          sender: 'bot',
+          content: response.content,
+          timestamp: new Date()
+        });
+
+        this.chatService.saveMessages(this.messages);
+        this.userInput = '';
+        this.selectedFile = null;
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error('Erreur :', err);
+        this.loading = false;
+      }
+    });
+  }
 
 }
