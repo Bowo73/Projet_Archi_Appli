@@ -1,0 +1,55 @@
+<div class="chat-container-global">
+
+<mat-card class="chat-wrapper">
+  <div class="chat-header">💬 Chat Bot</div>
+
+  <!-- Zone des messages -->
+  <div class="chat-messages" #scrollContainer>
+    <div *ngFor="let msg of messages; let i = index" class="message-wrapper" [ngClass]="msg.sender">
+      <div class="chat-bubble">
+        <div class="message-content">{{ msg.content }}</div>
+        <div class="timestamp">
+          {{ msg.timestamp | date: 'shortTime' }}
+          <!-- Bouton éditer uniquement pour les messages utilisateur -->
+          <button *ngIf="msg.sender === 'user'" mat-icon-button color="primary" (click)="editMessage(i)">
+            <mat-icon fontSize="14">edit</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chargement (spinner bot) -->
+    <div *ngIf="loading" class="message-wrapper bot">
+      <div class="chat-bubble loading">
+        <mat-progress-spinner diameter="20" mode="indeterminate"></mat-progress-spinner>
+      </div>
+    </div>
+  </div>
+
+  <!-- Zone d'édition / saisie -->
+  <div class="chat-input">
+    <mat-form-field appearance="outline" class="input-field">
+      <mat-label *ngIf="editMode">✏️ Modifier le message</mat-label>
+      <input
+        matInput
+        [disabled]="loading"
+        [(ngModel)]="userInput"
+        (keyup.enter)="sendMessage()"
+        placeholder="Tape ton message..."
+      />
+
+    </mat-form-field>
+
+    <!-- Annuler l’édition -->
+    <button *ngIf="editMode" mat-stroked-button color="warn" (click)="cancelEdit()">Annuler</button>
+
+    <!-- Bouton envoyer -->
+    <button mat-icon-button color="primary" (click)="sendMessage()">
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</mat-card>
+
+
+<!-- <button (click)="resetChat()">Réinitialiser</button> -->
+</div>
