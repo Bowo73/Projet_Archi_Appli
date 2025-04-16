@@ -1,4 +1,4 @@
-using chatbot.Models;
+// Controllers/PromptController.cs
 using chatbot.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,41 +8,25 @@ namespace chatbot.Controllers
     [Route("api/[controller]")]
     public class PromptController : ControllerBase
     {
-        private readonly IAiService _aiService;
-        private readonly IExcelService _excelService;
+        private readonly ChatOrchestratorService _chatOrchestrator;
 
-        public PromptController(IAiService aiService, IExcelService excelService)
+        public PromptController(ChatOrchestratorService chatOrchestrator)
         {
-            _aiService = aiService;
-            _excelService = excelService;
+            _chatOrchestrator = chatOrchestrator;
         }
 
-        /// <summary>
-        /// Envoie un prompt au bot avec un fichier optionnel
-        /// </summary>
         [HttpPost("send")]
-        public async Task<IActionResult> SendPrompt([FromForm] string message, IFormFile? file)
+        public async Task<IActionResult> SendPrompt([FromForm] IFormFile? file, [FromForm] string message)
         {
-            if (string.IsNullOrWhiteSpace(message) && file == null)
-                return BadRequest("Message ou fichier requis.");
-
-            string finalPrompt = message;
-
-            if (file != null && file.Length > 0)
+            try
             {
-                using var stream = file.OpenReadStream();
-                var produits = _excelService.Import(stream);
-
-                var produitTexte = string.Join("\n", produits.Select(p =>
-                $"{p.Reference} | {string.Join(" | ", p.Characteristics?.Select(c => $"{c.Key}: {c.Value}") ?? Enumerable.Empty<string>())}"));
-
-
-                finalPrompt += $"\n\nVoici les produits à considérer :\n{produitTexte}";
+                var result = await _chatOrchestrator.ProcessUserPromptAsync(message, file);
+                return Ok(new { content = result });
             }
-
-            var result = await _aiService.GenerateTextAsync(finalPrompt);
-
-            return Ok(new { content = result });
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur côté serveur : {ex.Message}");
+            }
         }
     }
 }

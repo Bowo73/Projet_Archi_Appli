@@ -49,6 +49,8 @@ builder.Services.AddSingleton<IExcelService, ExcelService>();
 builder.Services.AddSingleton<IGenerationService, GenerationService>();
 builder.Services.AddSingleton<QueueService>();
 
+builder.Services.AddScoped<ChatOrchestratorService>();
+
 var app = builder.Build();
 
 app.UseSwagger();
